@@ -24,5 +24,7 @@ http.createServer(function (req, res) {
 
     console.log(url, GET)
     res.end()
+    
+    aaa
 
 }).listen(8080)
