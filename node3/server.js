@@ -9,7 +9,7 @@ http.createServer(function (req, res) {
         var url = arr[0]
 
         //arr[1] => 数据 'user=blue&pass=123456'
-        var arr2 = arr.split('&')
+        var arr2 = arr[1].split('&')
         //arr[2] = ['user=blue','pass=123456']
 
         for (var i = 0; i < arr2.length; i++) {
@@ -24,7 +24,5 @@ http.createServer(function (req, res) {
 
     console.log(url, GET)
     res.end()
-    
-    aaa
 
 }).listen(8080)
