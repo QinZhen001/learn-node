@@ -14,6 +14,8 @@ server.get('/login', function (req, res) {
     var user = req.query['user']
     var pass = req.query['pass']
 
+    console.log(req.url)
+
     if (users[user] == null) {
         res.send({ok: false, msg: '此用户不存在'})
     } else {
@@ -24,3 +26,6 @@ server.get('/login', function (req, res) {
         }
     }
 })
+
+
+server.use(expressStatic('./www'))
