@@ -1,5 +1,5 @@
 const http = require('http')
-const queryString = require('querystring')
+const queryString = require('basis/node3/queryString')
 
 http.createServer(function (req, res) {
     var GET = {},
